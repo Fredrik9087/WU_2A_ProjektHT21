@@ -1,3 +1,5 @@
-I denna mapp lägger du filer som du använder i projektet men som inte syns på själva hemsidan, till exempel:
-- Skisser
-- Projektfiler till Photoshop
+peace with jazz img färger:
+lila: 153, 91, 116
+besch: 251, 218, 199
+mörklila: 139, 65, 98
+sand: 246, 183, 92

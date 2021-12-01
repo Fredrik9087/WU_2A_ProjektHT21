@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*logga*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*rubrik*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /*brödtext*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 150px 2fr 2fr 1fr;
+    grid-template-areas: 
+    
+    "he he he"
+    "ka er er"
+    "mu er er"
+    "ab ab hy"
+    ;
+}
+
+header{
+    grid-area: he;
+}
+
+#karta{
+    grid-area: ka;
+}
+
+#erbjudanden{
+    grid-area: er;
+    height: 100vh; /*olagligt att anpassa resten genom detta?*/
+}
+
+#musiker{
+    grid-area: mu;
+}
+
+#hyr_oss{
+    grid-area: hy;
+}
+
+#about_us{
+    grid-area: ab;
+}
