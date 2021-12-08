@@ -3,26 +3,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /*brödtext*/
 *{
     box-sizing: border-box;
+    background-color: rgb(0,0,0,0);
     margin: 0;
-    padding: 0;
+    text-align: center;
+    max-width: 100%;
+    
 }
 
-#wrapper{
-    width: 100vw;
+.box{
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(251, 218, 199);
+    border-radius: 15px;
+}
+
+#w1{
+    background-color: rgb(246, 183, 92);
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 150px 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
     grid-template-areas: 
     
-    "he he he"
-    "ka er er"
-    "mu er er"
-    "ab ab hy"
+    "he"
+    "w2"
     ;
 }
 
-header{
+header{ /* ev fixed position*/
     grid-area: he;
+    background-color: rgb(153, 91, 116);
+}
+
+#w2{
+    background-color: rgb(246, 183, 92);
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr 6fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: 
+    
+    "ax er er bx ka"
+    "ax er er bx mu"
+    "hy hy ab ab ab"
+    ;
+    grid-area: w2;
+}
+
+#intermediär{
+    grid-area: ax;
+}
+
+#intermediär{
+    grid-area: bx;
 }
 
 #karta{
@@ -32,6 +64,7 @@ header{
 #erbjudanden{
     grid-area: er;
     height: 100vh; /*olagligt att anpassa resten genom detta?*/
+    margin: 30px 50px;
 }
 
 #musiker{
