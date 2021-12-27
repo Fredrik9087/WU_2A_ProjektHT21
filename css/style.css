@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /*rubrik*/
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap'); /*brödtext*/
 *{
+    font-family: 'Cookie', cursive;
     box-sizing: border-box;
     background-color: rgb(0,0,0,0);
     margin: 0;
@@ -10,43 +11,43 @@
     
 }
 
+h1, h2, h3{
+    font-family:'Times New Roman', Times, serif
+}
+
+body{
+    background-color: rgb(246, 183, 92);
+}
+
 .box{
-    margin: 30px;
     padding: 10px;
     background-color: rgb(251, 218, 199);
     border-radius: 15px;
 }
 
-#w1{
-    background-color: rgb(246, 183, 92);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas: 
-    
-    "he"
-    "w2"
-    ;
-}
-
-header{ /* ev fixed position*/
+header{ 
     grid-area: he;
     background-color: rgb(153, 91, 116);
+    height: 50px;
+    width: 100vw;
+    position: fixed; 
 }
 
-#w2{
+#w1{
+    gap: 15px;
+    margin: 0 50px;
     background-color: rgb(246, 183, 92);
-    margin: 0 10px;
     display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr 6fr;
-    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: 4fr 4fr 6fr;
+    grid-template-rows: 50px 100vh 2fr 2fr 1fr;
     grid-template-areas: 
     
-    "ax er er bx ka"
-    "ax er er bx mu"
-    "hy hy ab ab ab"
+    "he he he"
+    "er er er"
+    "ka mu mu"
+    "hy mu mu"
+    "ab ab ab"
     ;
-    grid-area: w2;
 }
 
 #intermediär{
@@ -63,8 +64,18 @@ header{ /* ev fixed position*/
 
 #erbjudanden{
     grid-area: er;
-    height: 100vh; /*olagligt att anpassa resten genom detta?*/
-    margin: 30px 50px;
+    background-image: url('img/mink-mingle-qZ5lPCPvdXE-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+#text{
+    width: 33%;
+    background-color: bisque    ;
+    /*display: flex;
+    align-items: center;
+    flex-direction: column;*/
 }
 
 #musiker{
