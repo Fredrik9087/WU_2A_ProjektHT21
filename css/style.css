@@ -1,18 +1,20 @@
 /*logga=cuisineOT*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=PT+Serif&display=swap');/*ÄNDRA COOKIE TILL NÅT LÄSLIGT!!*/
 
 *{
-    font-family: 'Cookie', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.1rem;
     box-sizing: border-box;
     background-color: rgb(0,0,0,0);
     margin: 0;
     max-width: 100%;
+    background-size: cover;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline;
+    color: inherit;
 }
 
 #about_us{
@@ -21,14 +23,29 @@ a{
 
 .box{
     padding: 0.7rem;
-    background-color: rgb(251, 218, 199);
     border-radius: 15px;
+}
+
+.box_länk{
+    background-color: rgba(255, 228, 196, 0.678);
+    text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 #erbjudanden{
     grid-area: er;
     background-image: url('img/mink-mingle-qZ5lPCPvdXE-unsplash.jpg');
-    background-size: cover;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#erbjudanden_text{
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color: rgba(255, 228, 196, 0.65);
 }
 
 h1{
@@ -40,8 +57,13 @@ h1{
 
 h2{
     font-family: 'PT Serif', serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
+}
+
+h3{
+    font-family: 'PT Serif', serif;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 hr{
@@ -52,22 +74,33 @@ hr{
 
 #hyr_oss{
     grid-area: hy;
+    background-image: url('img/reinhart-julian-OeSIIEx1-ps-unsplash.jpg');
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 #karta{
     grid-area: ka;
-}
-
-#kategorier{
-    grid-area: na;
-    position: fixed;
-    height: 15vh;
-    width: 80vw;
-    background-color: rgb(187, 138, 70);
+    background-image: url('img/karta.png'); 
+    text-decoration: none;
 
     display: flex;
-    justify-content: space-evenly;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
+}
+
+#karta_text{
+    text-align: center;
+    width: 60%;
+}
+
+.kategori{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 30px 0 0;
 }
 
 li{
@@ -82,17 +115,35 @@ li{
 
 #meny{
     grid-area: me;
-    background-color:rgb(207, 158, 90);
+    background-color:rgba(255, 255, 255, 0.25);
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.mellan_kat{
+    margin: 25px 0 50px;
 }
 
 #musiker{
     grid-area: mu;
+    background-image: url('img/john-matychuk-gUK3lA3K7Yo-unsplash.jpg');
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.nav_kat{
+    padding-right: 2rem;
 }
 
 #nav_lankar{
     font-size: 1.4rem;
     font-family: 'PT Serif', serif;
     color: #eee0c8;
+    text-decoration: none;
 }
 
 #nav_main{ 
@@ -108,16 +159,33 @@ li{
     justify-content: space-around;
 }
 
-#text_ruta{
-    min-width: 270px;
-    max-width: 33%;
-    height: 100%;
-    background-color: rgba(255, 228, 196, 0.678);
-    padding: 1.25rem;
+#nav_produkter{
+    padding: 0 50px;
+    position: fixed;
+    height: 15vh;
+    width: 80vw;
+    background-color: rgb(207, 158, 90);
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: 0.5rem;
+}
+
+.pris{
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+.produkt{
+    width: 26%;
+    margin: 20px 3.66%;
+    padding: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.685);
+    border-radius: 15px;
 }
 
 ul{
@@ -128,7 +196,7 @@ ul{
 
 #w1{
     gap: 15px;   
-    padding: 1rem 3.5rem;
+    padding: 2rem 3.5rem;
     background-color: rgb(207, 158, 90);
     display: grid;
     grid-template-columns: 4fr 4fr 6fr 20vw;
@@ -145,12 +213,26 @@ ul{
 }
 
 #w2{
+    background-color: rgb(207, 158, 90);
+
     display: grid;
-    grid-template-columns: 80vw 20vw;
-    grid-template-rows: 15vh 85vw;
+    grid-template-columns: 1fr 20vw;
+    grid-template-rows: 15vh 1fr;
     grid-template-areas: 
     
     ". ."
     "me ."
     ;
+}
+
+#w_erbjudanden{
+    min-width: 270px;
+    max-width: 33%;
+    height: auto;
+    background-color: rgba(255, 228, 196, 0.795);
+    padding: 1.25rem;
+}
+
+#Varma_drycker #Kalla_drycker #Mat #Bakverk{
+    Padding: 0 10px;
 }
