@@ -51,7 +51,7 @@ a{
 
 #erbjudanden{
     grid-area: er;
-    background-image: url('img/mink-mingle-qZ5lPCPvdXE-unsplash.jpg');
+    background-image: url('img/erbjudanden_bild.png');
 
     display: flex;
     flex-direction: column-reverse;
@@ -118,7 +118,7 @@ hr{
 
 #hyr_oss{
     grid-area: hy;
-    background-image: url('img/reinhart-julian-OeSIIEx1-ps-unsplash.jpg');
+    background-image: url('img/Restaurang_bild.png');
 
     display: flex;
     flex-direction: column-reverse;
@@ -164,7 +164,7 @@ li{
 
 #musiker{
     grid-area: mu;
-    background-image: url('img/john-matychuk-gUK3lA3K7Yo-unsplash.jpg');
+    background-image: url('img/musiker_bild.png');
 
     display: flex;
     flex-direction: column-reverse;
